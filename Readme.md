@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Панасюк Сергей](https://up.htmlacademy.ru/htmlcss/28/user/1486003).
-* Наставник: [Станислав Кузнецов].(https://htmlacademy.ru/profile/id237925)
+* Студент: [Панасюк Сергей](https://https://htmlacademy.ru/profile/id1486003).
+* Наставник: [Станислав Кузнецов] (https://htmlacademy.ru/profile/id237925).
 
 ---
 
