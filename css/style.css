@@ -1,0 +1,59 @@
+:root { 
+
+--basic-black:#000000;
+--basic-white: #EEEEEE;
+--basic-grey: #888888;
+--basic-red: #FB565A;
+--basic-dark-red: #E74246;
+--basic-extra-red: #D7373B;
+--basic-green: #00CA74;
+--basic-dark-green:#00BC6C;
+--basic-extra-green: #00AA62;
+--basic-yellow:  #EFC84A; 
+--basic-dark-yellow: #EAB534;
+--basic-extra-yellow: #E5A722}
+
+body {
+  min-width: 1460px
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto, Arial, sans-serif"
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background: url(img/nerds-index-slide.png)
+  }
+  a { 
+    text-decoration: none;
+  }
+  img { 
+    max-width: 100%;
+    height: auto;
+  }
+  /* Main navigation */
+
+  .main navigation {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--basic-black)
+    background-color: transparent;
+  
+  }
+  .main-navigation-wrapper {
+    background-color: var(--basic-white);
+  }
+.site-navigation {
+  list-style: none;
+.site-navigation-current a: not([href]) 
+  background-color: var(--basic-white);
+  }
+/* User navigation*/
+
+.site-navigation a
+.user-navigation a {
+  color: var(--basic-black);
+ }
+ .site-navigation a:hover {background-color: (var(--basic-red));} 
+ .site-navigation a:focus {background-color: (--);}
