@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Nerds студия</title>
@@ -7,21 +7,24 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-  <a>
-  <img src="img/nerds-logo.png" alt="Студия дизайна Nёrds">
-  </a>
-  <header>
-  <nav>
-    <ul>
-      <li><a href="blank.html">Студия</a></li>
-      <li><a href="blank.html">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="blank.html">Контакты</a></li>
-    </ul>
-  </nav>
-    <a href="blank.html">Корзина</a>
-  </header>
+  <body class="main-header">
+    <header>
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+        <img src="img/nerds-logo.png" alt="Студия дизайна Nёrds">
+        </a>
+        <div class="container">
+          <ul class="site-navigation">
+            <li><a href="index.html">Студия</a></li>
+            <li><a href="index.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="index.html">Контакты</a></li>
+          </ul>
+          <p class="user-navigation">
+          <a class="cart" href="index.html">Корзина</a>
+        </div>  
+      </nav>
+    </header>
   <main>
     <section>
       <h2>Магазин готовых шаблонов</h2>
@@ -62,8 +65,8 @@
               <label for="filter-galery">Галерея</label>
             </li>
             <li>
-              <input type="checkbox" name="basket" id="filter-basket">
-              <label for="filter-basket">Корзина</label>
+              <input type="checkbox" name="cart" id="filter-cart">
+              <label for="filter-cart">Корзина</label>
             </li>
           <ul>
         </fieldset>
@@ -76,51 +79,51 @@
       <ul class="products-list">
         <li class="product-item">
           <img src="img/products/img-sedona.jpg" width="360" height="576" alt="Готовый шаблон сайта Sedona">
-        <div class="product-about">
-          <a href="product-card.html"><h2>Sedona</h2></a>
-          <p>Информационный сайт <span>для туристов</span></p>
-          <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон Sedona за ">9 900 руб.</a>
-        </div>
+            <div class="product-about">
+              <a href="product-card.html"><h2>Sedona</h2></a>
+              <p>Информационный сайт <span>для туристов</span></p>
+              <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон Sedona за ">9 900 руб.</a>
+            </div>
         </li>
         <li class="product-item">
           <img src="img/products/img-pink.jpg" width="360" height="576" alt="Готовый шаблон сайта Pink">
-          <div class="product-about">
-            <a href="product-card.html"><h2>Pink App</h2></a>
-            <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон Pink за ">9 900 руб.</a>
-          </div>
+            <div class="product-about">
+              <a href="product-card.html"><h2>Pink App</h2></a>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон Pink за ">9 900 руб.</a>
+            </div>
         </li>
         <li class="product-item">
           <img src="img/products/img-barbershop.jpg" width="360" height="576" alt="Готовый шаблон сайта Borodinski">
-          <div class="product-about">
-            <a href="product-card.html"><h2>Barbershop</h2></a>
-            <p>Сайт салона красоты. <span>Для мужчин, да.</span></p>
-            <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон Barbershop за">9 900 руб.</a>
-         </div>
+            <div class="product-about">
+              <a href="product-card.html"><h2>Barbershop</h2></a>
+              <p>Сайт салона красоты. <span>Для мужчин, да.</span></p>
+              <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон Barbershop за">9 900 руб.</a>
+            </div>
         </li>
         <li class="product-item">
           <img src="img/products/img-mishka.jpg" width="360" height="576" alt="Готовый шаблон сайта Mishka">
-          <div class="product-about">
-            <a href="product-card.html"><h2>Mishka</h2></a>
-            <p>Интернет-магазин <span>вязаных игрушек</span></p>
-            <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон Mishka за">9 900 руб.</a>
-          </div>
+            <div class="product-about">
+              <a href="product-card.html"><h2>Mishka</h2></a>
+              <p>Интернет-магазин <span>вязаных игрушек</span></p>
+              <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон Mishka за">9 900 руб.</a>
+            </div>
         </li>
         <li class="product-item">
           <img src="img/products/img-aplus.jpg" width="360" height="576" alt="Готовый шаблон сайта Study">
-          <div class="product-about">
-            <a href="product-card.html"><h2>A Plus</h2></a>
-            <p>Лендинг курсов повышения квалификации</p>
-            <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон Study за ">9 900 руб.</a>
-          </div>
+            <div class="product-about">
+              <a href="product-card.html"><h2>A Plus</h2></a>
+              <p>Лендинг курсов повышения квалификации</p>
+              <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон Study за ">9 900 руб.</a>
+            </div>
         </li>
         <li class="product-item">
-        <img src="img/products/img-kvast.jpg" width="360" height="576" alt="Готовый шаблон сайта Kvast">
-          <div class="product-about">
-            <a href="product-card.html"><h2>KBACT</h2></a>
-            <p>Промо-сайт производителя крафтового кваса</p>
-            <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон сайта Kvast за ">9 900 руб.</a>
-          </div>
+          <img src="img/products/img-kvast.jpg" width="360" height="576" alt="Готовый шаблон сайта Kvast">
+            <div class="product-about">
+              <a href="product-card.html"><h2>KBACT</h2></a>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон сайта Kvast за ">9 900 руб.</a>
+            </div>
         </li>
       </ul>
       <ul class="pagination">
@@ -152,28 +155,28 @@
             </a>
           </li>
         </ul>
-      </section>
+    </section>
   </main>
-     <footer>
-       <section>
-         <form>
-         <h2 class="text-header">nerds design studio</h2>
-           <p class="text-sub">191186, Санкт-Петербург,
-           ул. Б. Конюшенная, д.19/8</p>
-           <a href="tel:+78122757575" class="tel" aria-label="Позвонить нам по телефону">тел. +7 (812) 275-75-75</a>
-           <a href="modal.html" class="btn btn-medium">Напишите нам</a>
-         </form>
-       </section>
-       <section>
-         <h2>Как до нас добраться</h2>
-           <img src="img/products/map.svg" alt="Карта нахождения NЁRDS">
-       </section>
-       <section>
-         <a href="http://vk.com" alt="Наша страница Вконтакте">Вконтакте</a>
-         <a href="http://facebook.com" alt="Наша страница в Фейсбук">Фейсбук</a>
-         <a href="http://instagram.com" alt="Наша страница в Инстаграм">Инстаграм</a>
-         <p>Давайте дружить, это выгодно!</p>
-         <p>Скидка 10% для друзей из социальных сетей</p>
-       </section>
+    <footer>
+      <section>
+        <form>
+          <h2 class="text-header">nerds design studio</h2>
+            <p class="text-sub">191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д.19/8</p>
+            <a href="tel:+78122757575" class="tel" aria-label="Позвонить нам по телефону">тел. +7 (812) 275-75-75</a>
+            <a href="modal.html" class="btn btn-medium">Напишите нам</a>
+        </form>
+      </section>
+      <section>
+        <h2>Как до нас добраться</h2>
+          <img src="img/products/map.svg" alt="Карта нахождения NЁRDS">
+      </section>
+      <section>
+        <a href="http://vk.com" alt="Наша страница Вконтакте">Вконтакте</a>
+        <a href="http://facebook.com" alt="Наша страница в Фейсбук">Фейсбук</a>
+        <a href="http://instagram.com" alt="Наша страница в Инстаграм">Инстаграм</a>
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей</p>
+      </section>
 </body>
 </html>
