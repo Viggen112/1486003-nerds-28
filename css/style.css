@@ -118,24 +118,10 @@ body {
   font-size: 24px;
   line-height: 30px;
  .service-list {
-  color: var(--basic-black); */
+  color: var(--basic-black); 
   }
   
-  /*social button
-  .footer-social {
-    text-align: center;
-  }
-  
-  .footer-social ul {
-    list-style: none;
-  }
-  
-  .footer-social h2 {
-    font-size: 36px;
-  */
-  }
-  
-  /* Social button*/  
+   /* Social button*/  
   
   .social-button {
     color: inherit;
@@ -148,10 +134,11 @@ body {
   .social-button:focus {
     color: var(--basic-white);
     background-color:  linear-gradient(0deg, #E74246, #E74246) #FFFFFF;
-  .social-button:active {
+  .social-button:active; {
     color: #FFFFFFF
     background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1)
-  } 
+  }
   
-*/
+  
+
