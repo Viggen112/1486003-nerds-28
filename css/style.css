@@ -1,7 +1,8 @@
 :root { 
 
   --basic-black:#000000;
-  --basic-white: #EEEEEE;
+  --basic-white: #FFFFFF;
+  --basic-light-grey: #EEEEEE;
   --basic-grey: #888888;
   --basic-dark-grey:#A6A6A6;
   --basic-red: #FB565A;
@@ -21,16 +22,12 @@ body {
   padding: 0;
   font-family: "Roboto, Arial, sans-serif";
   font-size: 16px;
-  font-weight: normal;
   line-height: 24px;
+  font-weight: 500;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  background-image: url("img/nerds-index-slide.png")
-   width: 160px;
-   height: 65px;
-   left: 44px;
-   top: 38px;
-}
+  }
+
   a { 
     text-decoration: none;
   }
@@ -38,25 +35,67 @@ body {
     max-width: 100%;
     height: auto;
   }
-  /* Main navigation */
+
+  /*Grid*/
+
+  .page {
+    height: 100%;
+  }
+
+  .page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+
+  }
+/* Main header */
+
+/* Main navigation */
   .main navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 24px;
     color: var(--basic-black);
     background-color: transparent;
+    background-position: top center;
+    background-repeat: no-repeat;
+
     }
   .main-navigation-wrapper {
-    background-color: var(--basic-white);
+    width: 100%;
+    margin-bottom: 86px;
+    background-color: var(--basic-light-grey);
   }
-.site-navigation {
-  list-style: none};
-.site-navigation-current a: not([href]) { 
-  background-color: var(--basic-white);
-}
+
+  /*Logo*/
+
+  .main-header-logo {
+    order: 0
+    width: 160px;
+    height: 49px;
+  }
+
+  /*Container */
+
+  .container {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+
+ .site-navigation {
+   list-style: none};
+ .site-navigation-current a: not([href]) { 
+   background-color: var(--basic-grey);   
+  }
 /* User navigation*/
 
-.site-navigation a,
-.user-navigation a {
+ .site-navigation a,
+ .user-navigation a {
   color: var(--basic-black);
    }
  .site-navigation a:hover,
@@ -68,21 +107,21 @@ body {
  .user-navigation a:active   
   {color: var(--basic-dark-grey);}
 
-   /* Index columns */
 
-.index-columns {
+  /*Index columns*/ 
+
+ .index-columns {
   color: var(--basic-black);
   background-color: var(--basic-white);
   background-position: center;
   list-style: none;
   font-size: 24px;
   line-height: 30px;
-.service-list {
-  color: var(--basic-black);
-}
+ .service-list {
+  color: var(--basic-black); */
   }
-
-  /*social button*/
+  
+  /*social button
   .footer-social {
     text-align: center;
   }
@@ -93,10 +132,10 @@ body {
   
   .footer-social h2 {
     font-size: 36px;
-  
+  */
   }
   
-  /* Social button */
+  /* Social button*/  
   
   .social-button {
     color: inherit;
@@ -115,4 +154,4 @@ body {
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1)
   } 
   
-  /* */
+*/
