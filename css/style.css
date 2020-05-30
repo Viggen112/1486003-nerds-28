@@ -15,7 +15,6 @@
   --basic-dark-yellow: #EAB534;
   --basic-extra-yellow: #E5A722;
 }
-
 body {
   min-width: 1200px;
   margin: 0;
@@ -47,12 +46,17 @@ body {
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
-
   }
+
 /* Main header */
 
+.main-header {
+    margin-bottom: 80px;
+  }
+
 /* Main navigation */
-  .main navigation {
+
+.main navigation {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -62,8 +66,7 @@ body {
     background-color: transparent;
     background-position: top center;
     background-repeat: no-repeat;
-
-    }
+  }
   .main-navigation-wrapper {
     width: 100%;
     margin-bottom: 86px;
