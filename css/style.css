@@ -26,7 +26,7 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
 
@@ -76,6 +76,7 @@ body {
     align-items: center;*/
     font-size: 16px;
     line-height: 24px;
+    font-weight: 500;
     color: var(--basic-black);
     text-transform: uppercase;
     background-color: transparent;
@@ -131,18 +132,32 @@ body {
    background-color: var(--basic-light-grey);
   }
  .site-navigation a:hover,
- .user-navigation a:hover
-   {color: var(--basic-red);} 
+ .user-navigation a:hover {
+   color: var(--basic-red);
+  } 
  .site-navigation a:focus,
  .site-navigation a:active,
  .user-navigation a:focus,
- .user-navigation a:active   
-   {color: var(--basic-black);
+ .user-navigation a:active {  
+   color: var(--basic-black);
     opacity: 0.3;
- 
   }
 
+  .slider-title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    text-transform: none;
+  }
+
+  .slider-about {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: none;
+  }
   
+
   /*Service*/
 
 .service-list {
@@ -153,6 +168,7 @@ body {
    background-color: var(--basic-white);
    font-size: 24px;
    line-height: 30px;
+   font-size: 500;
    text-transform: uppercase;
 }
 .text-sub {
@@ -160,6 +176,96 @@ body {
    background-color: var(--basic-white);
    font-size: 16px;
    line-height: 24px;
+   font-weight: 400;
+   margin-bottom: 96px;
+}
+ 
+.button-red {
+  position: absolute;
+  margin-top: -64px;
+  width: 160px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 3px;
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.button-red a: hover, focus {
+  background color: var(--basic-dark-red);
+}
+
+.button-red a: active {
+  background-color: var(--basic-extra-red);
+  color: var(--basic-whithe);
+  opacity: 0.3;
+}
+
+.button-green a: hover,focus {
+  background-color: var(--basic-dark-green);
+}
+.button-green a: active {
+  background-color: var(--basic-extra-green);
+  color: var(--basic-whithe);
+  opacity: 0.3;
+
+}
+
+.button-yellow a: hover,focus {
+  background-color: var(--basic-dark-yellow);
+}
+
+.button-yellow a: :active {
+  background-color: var(--basic-extra-yellow);
+  color: var(--basic-whithe);
+  opacity: 0.3;
+  
+}
+
+.button-green {
+  position: absolute;
+  margin-top: -64px;
+  width: 160px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 3px;
+  font: inherit;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  color: var(--basic-white);
+  background-color: var(--basic-green);
+}
+
+.button-yellow {
+  position: absolute;
+  margin-top: -64px;
+  justify-content: center;
+  width: 160px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 3px;
+  font: inherit;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+  color: var(--basic-white);
+  background-color: var(--basic-yellow);
 }
 
 /*
@@ -174,32 +280,15 @@ body {
   padding: 0;
 }*/
   
-/*
- .btn btn-small red {
-   color: var(--basic-white);
-   background-color: var(--basic-red);
- .btn btn-small red a,
- .btn btn-small green a,
- .btn btn-small yellow a,
- .btn btn-small red a:hover,
- .btn btn-small green a:hover,
- .btn btn-small yellow a:hover {color: var(--basic-white);
-  }  
- .btn btn-small red a:active,
- .btn btn-small green a:active,
- .btn btn-small yellow a:active {color: var(--basic-white) opacity 0.3;
-  }
-*/
 
-
-
-  /*Desсription*/
+ /*Desсription*/
 
   .desсription-about {
     color: var(--basic-black);
     background-color: var(--basic-white);
     font-size: 45px;
     line-height: 45px;
+    font-size: 500;
   }
 
   .desсription-features {
@@ -207,6 +296,7 @@ body {
     background-color: var(--basic-white);
     font-size: 16px;
     line-height: 24px; 
+    font-size: 400;
     margin-bottom: 40px;
     text-transform: uppercase;
   }
@@ -216,7 +306,7 @@ body {
     background-color: var(--basic-white);
     font-size: 16px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 500;
     text-transform: uppercase;
   } 
   
@@ -225,7 +315,7 @@ body {
     background-color: var(--basic-white);
     font-size: 16px;
     line-height: 24px;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
   }
 
@@ -234,6 +324,7 @@ body {
     background-color: var(--basic-white);
     font-size: 16px;
     line-height: 24px;
+    font-size:400 ;
     list-style: none;
   }
 
@@ -245,7 +336,7 @@ body {
     background-color: var(--basic-white);
     font-size: 16px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 500;
   }
 
   .procent-numbers {
@@ -253,6 +344,7 @@ body {
     background-color: var(--basic-white);
     font-size: 45px;
     line-height: 64px;
+    font-size: 500;
   }
 
   .text-sub {
@@ -260,6 +352,7 @@ body {
     background-color: var(--basic-white);
     font-size: 16px;
     line-height: 18px;
+    font-size: 400;
   }
 
   
@@ -268,11 +361,41 @@ body {
   }
   .stats-title {
     text-transform: uppercase;
+  } 
+  .stats-item procent {
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 400;
   }
   .text-subb {
-    color: var(--basic-light-black)
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    font-size: 16px;
+    line-height: 18px;
+    font-size: 400;
+  }
   }
  
+  .button-mail {
+    position: absolute;
+    width: 219px;
+    height: 50px;
+    border-radius: 3px;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+
+  .map-wrapper {
+    margin-top: 100px;
+
+  }
   /* Social button*  
   
   .social-button {
@@ -317,6 +440,23 @@ body {
     list-style: none;
     color: var(--basic-light-black);
   }
+
+  .features-button {
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    border-radius: 3px;
+    color: var(--basic-dark);
+    background-color: var(--basic-light-grey);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase; 
+  }
+  
   
   .product-item {
     background-color: var(--);
@@ -328,6 +468,7 @@ body {
 
   }
 
+  
   
   
   
