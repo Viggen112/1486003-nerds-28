@@ -157,16 +157,31 @@
         </ul>
     </section>
   </main>
-    <footer class="page-footer main-footer">
-      <div class="container">
-        <section class="footer-contacts">
-        <form >
-          <h2 class="contacts">Nёrds design studio</h2>
-          <p class="text-sub">191186, Санкт-Петербург,<br>
-           ул. Б. Конюшенная, д.19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a href="#" class="button-mail" aria-label="Напишите нам">Напишите нам</a>
+  <footer class="page-footer main-footer">
+    <div class="container">
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form class="appointment-form" action="http://echo.htmlacademy.ru" method="get"
+          <p class="appointment-item">
+            <label for="appointment-name">Ваше имя</label>
+            <input id="appointment-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="appointment-email">
+            <label for="appointment-email">Ваш email</label>
+            <input id="appointment-email" type="email" name="email" placeholder="email@example.com">
+          </p>
+          <p class="appointment-text">
+            <label for="appointment-text">Текст письма</label>
+            <input id="appointment-text" type="text" name="text" placeholder="В свободной форме">
+          </p>
+          <button type="submit">Отправить</button>
         </form>
+          <h2 class="contacts">Nёrds design studio</h2>
+            <p class="text-sub">191186, Санкт-Петербург,<br>
+             ул. Б. Конюшенная, д.19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a href="#" class="button-mail" aria-label="Напишите нам">Напишите нам</a>
+            <a href="modal.html" class="button-medium">Напишите нам</a>
       </section>
       <section class="map-wrapper">
         <div class="location"
