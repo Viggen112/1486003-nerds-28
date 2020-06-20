@@ -8,24 +8,25 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body inner-page">
-
+<body class="page-body">
   <header class="main-header">
     <nav class="main-navigation container">
       <a class="main-header-logo" href="index.html">
-        <img src="img/nerds-logo.png" width="160" height="65" alt="Студия дизайна Nёrds">
+        <img src="img/nerds-logo.png" width="160" height="65" alt="Студия дизайна Нердс">
       </a>
       <ul class="site-navigation">
-        <li><a href="index.html">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
       </ul>
       <div class="user-navigation">
         <a class="cart-link" href="#">Корзина</a>
       </div>
     </nav>
   </header>
+
+
   <main class="page-catalog container">
     <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="grid-box">
@@ -70,7 +71,7 @@
             </li>
           <ul>
         </fieldset>
-        <a href="#" class="features-button" alt="Кнопка показать">Показать</a>
+        <a href="#" class="button features-button" alt="Кнопка показать">Показать</a>
       </form>
     </section>
     <section class="catalog">
@@ -82,7 +83,7 @@
               <div class="product-about">
                 <a href="product-card.html"><h2>Sedona</h2></a>
                 <p>Информационный сайт для туристов</p>
-                <a href="#" class="btn btn-cart" aria-label="Положить в корзину шаблон Sedona за ">9 900 руб.</a>
+                <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Sedona за ">9 900 руб.</a>
               </div>
           </li>
           <li class="product-item">
@@ -90,7 +91,7 @@
               <div class="product-about">
                 <a href="product-card.html"><h2>Pink App</h2></a>
                 <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <a href="#" class="button-cart" aria-label="Положить в корзину шаблон Pink за ">9 900 руб.</a>
+                <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Pink за ">9 900 руб.</a>
               </div>
           </li>
           <li class="product-item">
@@ -98,7 +99,7 @@
               <div class="product-about">
                 <a href="product-card.html"><h2>Barbershop</h2></a>
                 <p>Сайт салона красоты. <span>Для мужчин, да.</span></p>
-                <a href="#" class="button-cart" aria-label="Положить в корзину шаблон Barbershop за">9 900 руб.</a>
+                <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Barbershop за">9 900 руб.</a>
               </div>
           </li>
           <li class="product-item">
@@ -106,7 +107,7 @@
               <div class="product-about">
                 <a href="product-card.html"><h2>Mishka</h2></a>
                 <p>Интернет-магазин <span>вязаных игрушек</span></p>
-                <a href="#" class="button-cart" aria-label="Положить в корзину шаблон Mishka за">9 900 руб.</a>
+                <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Mishka за">9 900 руб.</a>
               </div>
           </li>
           <li class="product-item">
@@ -114,7 +115,7 @@
             <div class="product-about">
               <a href="product-card.html"><h2>A Plus</h2></a>
               <p>Лендинг курсов повышения квалификации</p>
-              <a href="#" class="button-cart" aria-label="Положить в корзину шаблон Study за ">9 900 руб.</a>
+              <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Study за ">9 900 руб.</a>
             </div>
           </li>
           <li class="product-item">
@@ -122,40 +123,16 @@
               <div class="product-about">
                 <a href="product-card.html"><h2>KBACT</h2></a>
                 <p>Промо-сайт производителя крафтового кваса</p>
-                <a href="#" class="button-cart" aria-label="Положить в корзину шаблон сайта Kvast за ">9 900 руб.</a>
+                <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон сайта Kvast за ">9 900 руб.</a>
               </div>
           </li>
         </ul>
       <div class="pagination">
-        <button class="button catalog-button catalog-button-1" type ="button">1</button>
-        <button class="button catalog-button catalog-button-2" type ="button" disabled>2</button>
-        <button class="button catalog-button catalog-button-3" type ="button" disabled>3</button>
-        <button class="button catalog-button catalog-button-next" type ="button" disabled>Следующая</button>
+        <a href="#" class="button button-catalog1" arial-label="Первая страница">1</a>
+        <a href="#" class="button button-catalog2" arial-label="Вторая страница">2</a>
+        <a href="#" class="button button-catalog3" arial-label="Третья страница">3</a>
+        <a href="#" class="button button-next" arial-label="Следующая страница">Следующая</a>
       </ul>
-      <section class="clients">
-        <ul class="clients-list">
-          <li class="clients-item">
-            <a href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/products/htmlacademy.svg" width="199" height="68" alt="Перейти на сайт интенсива HTML ACADEMY">
-            </a>
-          </li>
-          <li class="clients-item">
-            <a href="#">
-              <img src="img/borodinski.png" width="209" height="87" alt="Барбершоп BORODINSKI">
-            </a>
-          </li>
-          <li class="clients-item">
-            <a href="#">
-              <img src="img/pink.png" width="185" height="52" alt="Приложение PINK">
-            </a>
-          </li>
-          <li class="clients-item">
-            <a href="#">
-              <img src="img/mishka.png" width="173" height="84" alt="Интернет-магазин вязаных игрушек MISHKA">
-            </a>
-          </li>
-        </ul>
-    </section>
   </main>
   <footer class="page-footer main-footer">
     <div class="container">
@@ -180,13 +157,13 @@
             <p class="text-sub">191186, Санкт-Петербург,<br>
              ул. Б. Конюшенная, д.19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a href="#" class="button-mail" aria-label="Напишите нам">Напишите нам</a>
-            <a href="modal.html" class="button-medium">Напишите нам</a>
+            <!--<a href="#" class="button-mail" aria-label="Напишите нам"></a>-->
+            <a href="modal.html" class="button button-mail">Напишите нам</a>
       </section>
       <section class="map-wrapper">
         <div class="location"
           <h2 class="visually-hidden">Как до нас добраться</h2>
-            <img src="img/products/map.svg" alt="Карта нахождения NЁRDS">
+            <img src="img/products/map.svg" width="1440" height="416" alt="Карта нахождения NЁRDS">
       </section>
       <section class="social icon">
         <a href="http://vk.com" alt="Наша страница Вконтакте">Вконтакте</a>
