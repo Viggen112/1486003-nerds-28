@@ -38,20 +38,40 @@
 
   <main class="page-catalog">
     <section class="catalog">
-      <form class="action="https://echo.htmlacademy.ru" method="get">
+      <form class="filter"https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filter-item">
+          <legend class="price-checks">Стоимость:</legend>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">
+                от <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price">
+                до <input type="number" name="max-price" value="15000">
+              </label>
+            </div>
+          </div>
+        </fieldset>
         <fieldset class="grid-box">
           <legend class="grid-checks">Сетка:</legend>
             <ul class="grid-title">
-              <li class="grid-item">
-                <input type="radio" name="types-of-grid" value="adaptive" id="filter-adaptive" checked>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" name="types-of-grid" value="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
-              <li class="grid-item">
-                <input type="radio" name="types-of-grid" value="fixed" id="filter-fixed">
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" name="types-of-grid" value="fixed" id="filter-fixed">
                 <label for="filter-fixed">Фиксированная</label>
               </li>
-              <li class="grid-item">
-                <input type="radio" name="types-of-grid" value="rubber" id="filter-rubber">
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-radio filter-input" name="types-of-grid" value="rubber" id="filter-rubber">
                 <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
@@ -59,24 +79,24 @@
           <fieldset class="features-box">
             <legend class="features-checks">Особенности:</legend>
             <ul class="features-title">
-              <li class="features-item">
-                <input type="checkbox" name="slider" id="filter-slider" checked>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" name="slider" id="filter-slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
-              <li class="features-item">
-                <input type="checkbox" name="advantages" id="filter-advantages">
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" name="advantages" id="filter-advantages">
                 <label for="filter-advantages">Блок преимуществ</label>
               </li>
-              <li class="features-item">
-                <input type="checkbox" name="news" id="filter-news" checked>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" name="news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
-              <li class="features-item">
-                <input type="checkbox" name="galery" id="filter-galery">
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" name="galery" id="filter-galery">
                 <label for="filter-galery">Галерея</label>
               </li>
-              <li class="features-item">
-                <input type="checkbox" name="cart" id="filter-cart">
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden filter-input-checkbox filter-input" name="cart" id="filter-cart">
                 <label for="filter-cart">Корзина</label>
               </li>
             </ul>
@@ -85,56 +105,77 @@
         </form>
       </section>
       <section class="partners">
-        <ul class="products-list">
-          <li class="product-item">
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="Готовый шаблон сайта Sedona">
-              <div class="product-about">
-                <a href="product-card.html"><h2>Sedona</h2></a>
-                <p>Информационный сайт<br> для туристов</p>
-                <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Sedona за ">9 900 ₽</a>
-              </div>
-          </li>
-          <li class="product-item">
-            <img src="img/img-pink.jpg" width="358" height="576" alt="Готовый шаблон сайта Pink">
-              <div class="product-about">
-                <a href="product-card.html"><h2>Pink App</h2></a>
-                <p>Продуктовый лендинг  <br>приложения для iOS и Android</p>
-                <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Pink за ">9 900 ₽</a>
-              </div>
-          </li>
-          <li class="product-item">
-            <img src="img/img-barbershop.jpg" width="364" height="582" alt="Готовый шаблон сайта Borodinski">
-              <div class="product-about">
-                <a href="product-card.html"><h2>Babershop</h2></a>
-                <p>Сайт салона красоты.<br> Для мужчин, да.</p>
-                <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Barbershop за">9 900 ₽</a>
-              </div>
-          </li>
-          <li class="product-item">
-            <img src="img/img-mishka.jpg" width="362" height="580" alt="Готовый шаблон сайта Mishka">
-              <div class="product-about">
-                <a href="product-card.html"><h2>Mishka</h2></a>
-                <p>Интернет-магазин <br>вязаных игрушек</p>
-                <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Mishka за">9 900 ₽ </a>
-              </div>
-          </li>
-          <li class="product-item">
-            <img src="img/img-aplus.jpg" width="364" height="582" alt="Готовый шаблон сайта Study">
-            <div class="product-about">
-              <a href="product-card.html"><h2>A Plus</h2></a>
-              <p>Лендинг курсов повышения<br> квалификации</p>
-              <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Study за ">9 900 ₽</a>
-            </div>
-          </li>
-          <li class="product-item">
-            <img src="img/img-kvast.jpg" width="362" height="580" alt="Готовый шаблон сайта Kvast">
-              <div class="product-about">
-                <a href="product-card.html"><h2>KBACT</h2></a>
-                <p>Промо-сайт производителя <br>крафтового кваса</p>
-                <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон сайта Kvast за ">9 900 ₽</a>
-              </div>
-          </li>
-        </ul>
+        <div class="partners-container">
+					<h2 class="visually-hidden">Партнеры</h2>
+					<section class="sorting">
+						<h2 class="visually-hidden">Сортировать</h2>
+						<b>Сортировать:</b>
+						<ul class="sorting-list">
+							<li class="sorting-item"><a class="active" href="#">По цене</a></li>
+							<li class="sorting-item"><a href="#">По типу</a></li>
+							<li class="sorting-item"><a href="#">По названию</a></li>
+						</ul>
+						<p class="sorting-buttons">
+							<button class="button-down" type="button">
+								<p class="visually-hidden">От большего к меньшему</p>	
+							</button>
+							<button class="button-up">
+								<p class="visually-hidden">Oт меньшего к большему</p>	
+							</button>
+            </p>
+          </section>
+          <div class="products">
+            <ul class="products-list">
+              <li class="product-item">
+                <img src="img/img-sedona.jpg" width="360" height="576" alt="Готовый шаблон сайта Sedona">
+                  <div class="product-about">
+                    <a href="product-card.html"><h2>Sedona</h2></a>
+                    <p>Информационный сайт<br> для туристов</p>
+                    <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Sedona за ">9 900 ₽</a>
+                  </div>
+              </li>
+              <li class="product-item">
+                <img src="img/img-pink.jpg" width="360" height="576" alt="Готовый шаблон сайта Pink">
+                  <div class="product-about">
+                    <a href="product-card.html"><h2>Pink App</h2></a>
+                    <p>Продуктовый лендинг  <br>приложения для iOS и Android</p>
+                    <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Pink за ">9 900 ₽</a>
+                  </div>
+              </li>
+              <li class="product-item">
+                <img src="img/img-barbershop.jpg" width="360" height="576" alt="Готовый шаблон сайта Borodinski">
+                  <div class="product-about">
+                    <a href="product-card.html"><h2>Barbershop</h2></a>
+                    <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+                    <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Barbershop за">9 900 ₽</a>
+                  </div>
+              </li>
+              <li class="product-item">
+                <img src="img/img-mishka.jpg" width="360" height="576" alt="Готовый шаблон сайта Mishka">
+                  <div class="product-about">
+                    <a href="product-card.html"><h2>Mishka</h2></a>
+                    <p>Интернет-магазин <br>вязаных игрушек</p>
+                    <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Mishka за">9 900 ₽ </a>
+                  </div>
+              </li>
+              <li class="product-item">
+                <img src="img/img-aplus.jpg" width="360" height="576" alt="Готовый шаблон сайта Study">
+                  <div class="product-about">
+                    <a href="product-card.html"><h2>A Plus</h2></a>
+                    <p>Лендинг курсов повышения<br> квалификации</p>
+                    <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон Study за ">9 900 ₽</a>
+                  </div>
+              </li>
+              <li class="product-item">
+                <img src="img/img-kvast.jpg" width="360" height="576" alt="Готовый шаблон сайта Kvast">
+                  <div class="product-about">
+                    <a href="product-card.html"><h2>KBACT</h2></a>
+                    <p>Промо-сайт производителя <br>крафтового кваса</p>
+                    <a href="#" class="button button-cart" aria-label="Положить в корзину шаблон сайта Kvast за ">9 900 ₽</a>
+                 </div>
+              </li>
+            </ul>
+          </div>
       </div>
       <div class="pagination">
         <a href="#" class="button-catalog1" arial-label="Первая страница">1</a>
