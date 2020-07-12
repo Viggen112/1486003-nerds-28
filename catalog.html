@@ -25,10 +25,7 @@
 						<li><a href="#">Контакты</a></li>
 					</ul>
 					<div class="basket">
-            <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.5 15c.8284 0 1.5-.6716 1.5-1.5S5.3284 12 4.5 12 3 12.6716 3 13.5 3.6716 15 4.5 15zM12.5 15c.8284 0 1.5-.6716 1.5-1.5s-.6716-1.5-1.5-1.5-1.5.6716-1.5 1.5.6716 1.5 1.5 1.5zM15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951V2z" fill="#A6A6A6"/>
-            </svg>
-						<a href="#">Корзина</a>
+            <a href="#">Корзина</a>
 					</div>
 				</div>
       </nav>
@@ -63,15 +60,15 @@
           <legend class="grid-checks">Сетка:</legend>
             <ul class="grid-title">
               <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" name="types-of-grid" value="adaptive" id="filter-adaptive" checked>
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="types-of-grid" value="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" name="types-of-grid" value="fixed" id="filter-fixed">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="types-of-grid" value="fixed" id="filter-fixed">
                 <label for="filter-fixed">Фиксированная</label>
               </li>
               <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" name="types-of-grid" value="rubber" id="filter-rubber">
+                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="types-of-grid" value="rubber" id="filter-rubber">
                 <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
@@ -80,23 +77,23 @@
             <legend class="features-checks">Особенности:</legend>
             <ul class="features-title">
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" name="slider" id="filter-slider" checked>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" name="advantages" id="filter-advantages">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantages" id="filter-advantages">
                 <label for="filter-advantages">Блок преимуществ</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" name="news" id="filter-news" checked>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
                 <label for="filter-news">Новости</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" name="galery" id="filter-galery">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="galery" id="filter-galery">
                 <label for="filter-galery">Галерея</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" name="cart" id="filter-cart">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="cart" id="filter-cart">
                 <label for="filter-cart">Корзина</label>
               </li>
             </ul>
@@ -104,7 +101,7 @@
           <a href="#" class="features-btn" alt="Кнопка показать">Показать</a>
         </form>
       </section>
-      <section class="partners">
+      <section class="our-partners">
         <div class="partners-container">
 					<h2 class="visually-hidden">Партнеры</h2>
 					<section class="sorting">
@@ -182,48 +179,38 @@
         <a href="#" class="button-catalog2" arial-label="Вторая страница">2</a>
         <a href="#" class="button-catalog3" arial-label="Третья страница">3</a>
         <a href="#" class="button-next" arial-label="Следующая страница">Следующая</a>
-        </div>
-      <section class="map-catalog">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <img src="img/products/map.jpg" alt="Карта нахождения NЁRDS">
-        <div class="location">
-          <section class="address-catalog">
-            <h2 class="address-title">Nёrds design studio</h2>
-            <p class="adress-text">191186, Санкт-Петербург,<br>
-             ул. Б. Конюшенная, д.19/8</p>
-            <p class="adress-text">тел. +7 (812) 275-75-75</p>
-            <a href="modal.html" class="button button-mail">Напишите нам</a>
-          </section>
-        </div>
-      </section>
-  </main>
+      </div>
+    </main>
 
 <footer class="page-footer inner-footer">
+  <section class="map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+      <div class="location">
+        <section class="address">
+          <h3 class="address-title">Nёrds design studio</h3>
+          <p class="address-text">191186, Санкт-Петербург,<br>
+           ул. Б. Конюшенная, д.19/8</p>
+          <p class="address-phone">тел. +7 (812) 275-75-75</p>
+          <a href="modal.html" class="button button-mail">Напишите нам</a>
+        </section>
+      </div>
+  </section>
   <div class="footer-container">  
     <div class="social">
       <ul class="social-list">
         <li class="social-item">
-          <a class="social-button" href="">
+          <a class="vk" href="http://vk.com/">
             <p class="visually-hidden">Наша страница в контакте</p>  
-            <svg width="27" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z" fill="#fff"/>
-            </svg>
           </a>  
         </li>      
         <li class="social-item">
-          <a class="social-button" href="">
+          <a class="fb" href="http://facebook.com">
             <p class="visually-hidden">Наша страница в Фейсбук</p>  
-            <svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 4V0H8C5.7909 0 4 1.7909 4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"/>
-            </svg>
           </a>
         </li>
         <li class="social-item">
-          <a class="social-button" href="">
+          <a class="instagram" href="http://instagram.com">
             <p class="visually-hidden">Наша страница в Инстаграм</p>      
-            <svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm11 10.5C14 8.57 12.43 7 10.5 7S7 8.57 7 10.5 8.57 14 10.5 14s3.5-1.57 3.5-3.5zM3 18V9h1.181A6.5043 6.5043 0 004 10.5c0 3.5899 2.9101 6.5 6.5 6.5s6.5-2.9101 6.5-6.5a6.4515 6.4515 0 00-.181-1.5H18v9H3zM14 7h4V3h-4v4z" fill="#fff"/>
-            </svg>
           </a>
         </li>
     </div>
